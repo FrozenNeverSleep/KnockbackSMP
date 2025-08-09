@@ -8,7 +8,8 @@ public final class KnockbackSMP extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         // getServer().getPluginManager().registerEvents(new ChunkGenerationListener(), this);
-        getServer().getPluginManager().registerEvents(new KnockBackListener(), this);
+        getServer().getPluginManager().registerEvents(new KnockBackListener(this), this);
+
     }
 
     @Override

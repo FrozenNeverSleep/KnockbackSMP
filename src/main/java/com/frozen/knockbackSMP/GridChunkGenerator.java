@@ -7,8 +7,6 @@ import org.bukkit.generator.ChunkGenerator;
 
 import java.util.Random;
 
-
-
 public class GridChunkGenerator extends ChunkGenerator {
     public void deleteSlice(Chunk chunk, World world, int x, int z) {
         for (int y = -64; y<321; y++) {
@@ -27,5 +25,4 @@ public class GridChunkGenerator extends ChunkGenerator {
             }
         }
     }
-
 }
